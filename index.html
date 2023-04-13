@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<title>accordian 2</title>
+		<link href="style.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	</head>
+	<body>
+	<div class="container">
+	<div class="line">
+	<p> as long as u love me<span class="fa-exclamation"> </span><P>
+	</div>
+	</div>
+	<script>
+	let crazy=document.querySelector("span")
+	let bboy=document.querySelector(".container")
+	crazy.addEventListener("mouseenter",function(e){
+		let div1=document.createElement("div")
+		bboy.appendChild(div1);
+		div1.classList.add("dell");
+		let head=document.createElement("h3")
+		head.innerHTML="i am a tooltip";
+		div1.appendChild(head);
+		let p=document.createElement("p")
+		p.innerHTML="learn more in this guide to creating beautiful,helpful tooltips";
+		div1.appendChild(p);
+		console.log(bboy);
+	crazy.addEventListener("mouseleave",function(e){
+		div1.remove();
+		
+		
+		
+		
+		
+
+		
+	});
+	});
+
+	
+
+	</script>
+		
+		
+		
+	</body>
+	
+</html>
